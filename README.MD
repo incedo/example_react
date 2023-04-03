@@ -76,3 +76,10 @@ This is the initial start of the project
 ## `npm install redux react-redux @reduxjs/toolkit`
 
 This command installs the Redux library, the official React bindings for Redux, and the Redux Toolkit, which simplifies Redux setup.
+
+## Local development tips
+
+
+## `npm install json-server --save-dev`
+
+Add a local mock server to easily mock some data

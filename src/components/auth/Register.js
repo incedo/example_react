@@ -1,38 +1,38 @@
 import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { login } from '../../store/reducers/userReducer';
 import authService from '../../services/authService';
 
-function Login() {
+function Register() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const isLoggedIn = useSelector((state) => state.user.isLoggedIn);
   const dispatch = useDispatch();
 
-  const handleLogin = (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
-    // You should replace this with an actual API call to authenticate the user
-    const dummyUsername = 'kees';
-    const dummyPassword = 'test';
-    if (username === dummyUsername && password === dummyPassword) {
-      // You should replace this with an actual API call to authenticate the user
-      
 
-      const userData = { id: 1, name: 'Kees', username: 'kees' };
-      dispatch(login(userData));
-    } else {
-      alert('Invalid username or password');
+    try {
+      // Replace this URL with the actual API endpoint for user registration
+      const response = await authService.register(username, password);
+
+      if (response.ok) {
+        const userData = await response.json();
+        // Dispatch the login action to update the Redux store
+        dispatch(login(userData));
+      } else {
+        // Handle any errors from the API
+        const error = await response.text();
+        alert(`Error: ${error}`);
+      }
+    } catch (error) {
+      console.error('Error:', error);
     }
   };
 
-  if (isLoggedIn) {
-    return <p>You are already logged in.</p>;
-  }
-
   return (
     <div>
-      <h1>Login</h1>
-      <form onSubmit={handleLogin}>
+      <h1>Register</h1>
+      <form onSubmit={handleRegister}>
         <div>
           <label htmlFor="username">Username:</label>
           <input
@@ -51,10 +51,10 @@ function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit">Register</button>
       </form>
     </div>
   );
 }
 
-export default Login;
+export default Register;
