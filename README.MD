@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+##  `npx create-react-app example_react`
+
+This is the initial start of the project
+
+## `npm install redux react-redux @reduxjs/toolkit`
+
+This command installs the Redux library, the official React bindings for Redux, and the Redux Toolkit, which simplifies Redux setup.
