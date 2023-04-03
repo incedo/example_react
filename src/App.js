@@ -7,6 +7,7 @@ import Menu from './components/organisms/Menu';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
+import Profile from './components/pages/Profile';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/contact" element={<Contact/>} />
             <Route path="/login" element={<Login/>} />
             <Route path="/register" element={<Register/>} />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
         </main>
       </BrowserRouter>

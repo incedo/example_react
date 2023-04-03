@@ -83,3 +83,9 @@ This command installs the Redux library, the official React bindings for Redux, 
 ## `npm install json-server --save-dev`
 
 Add a local mock server to easily mock some data
+
+## json-server
+https://egghead.io/lessons/javascript-creating-demo-apis-with-json-server
+
+## axios
+https://blog.logrocket.com/axios-vs-fetch-best-http-requests/
