@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes ,Route } from 'react-router-dom';
-import Login from './components/auth/Login';
-import Register from './components/auth/Register';
-import Menu from './components/Menu';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
+import Login from './components/organisms/auth/Login';
+import Register from './components/organisms/auth/Register';
+import Menu from './components/organisms/Menu';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Contact from './components/pages/Contact';
 
 function App() {
   return (

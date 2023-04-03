@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { login } from '../../store/reducers/userReducer';
-import authService from '../../services/authService';
+import { login } from '../../../store/reducers/userReducer';
+import authService from '../../../services/authService';
 
 function Register() {
   const [username, setUsername] = useState('');
