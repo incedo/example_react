@@ -11,8 +11,16 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
     // You should replace this with an actual API call to authenticate the user
-    const userData = { id: 1, name: 'John Doe', username: 'johndoe' };
-    dispatch(login(userData));
+    const dummyUsername = 'kees';
+    const dummyPassword = 'test';
+
+    if (username === dummyUsername && password === dummyPassword) {
+      // You should replace this with an actual API call to authenticate the user
+      const userData = { id: 1, name: 'Kees', username: 'kees' };
+      dispatch(login(userData));
+    } else {
+      alert('Invalid username or password');
+    }
   };
 
   if (isLoggedIn) {
