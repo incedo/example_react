@@ -89,3 +89,9 @@ https://egghead.io/lessons/javascript-creating-demo-apis-with-json-server
 
 ## axios
 https://blog.logrocket.com/axios-vs-fetch-best-http-requests/
+
+## using env for building the project
+Remove the url so we can use env vars for urls
+
+export REACT_APP_API_BASE_URL=https://api.example.com
+npm run build
