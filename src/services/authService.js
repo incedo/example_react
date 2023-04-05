@@ -1,6 +1,5 @@
-// Replace these URLs with the actual API endpoints for your backend
 const API_BASE_URL = 'http://localhost:5000';
-const REGISTER_URL = `${API_BASE_URL}/register`;
+const REGISTER_URL = `${API_BASE_URL}/accounts`;
 const LOGIN_URL = `${API_BASE_URL}/login`;
 
 async function register(username, password) {

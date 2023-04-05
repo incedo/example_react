@@ -21,7 +21,7 @@ function Login() {
 
       const userData = { id: 1, name: 'Kees', username: 'kees' };
       dispatch(login(userData));
-      dispatch(setProfile({ name: 'Kees', imageUrl: 'https://www.pinclipart.com/picdir/middle/541-5416602_dummy-profile-image-url-clipart.png' }));
+      dispatch(setProfile({ name: 'Kees', imageUrl: 'https://www.pinclipart.com/picdir/middle/541-5416602_dummy-profile-image-url-clipart.png', bio : "testdata" }));
     } else {
       alert('Invalid username or password');
     }
