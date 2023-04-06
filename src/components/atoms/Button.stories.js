@@ -12,6 +12,13 @@ export default {
 export const Primary = {
   args: {
     primary: true,
-    label: 'Button',
+    label: 'Main',
+  },
+};
+
+export const NotPrimary = {
+  args: {
+    primary: false,
+    label: 'Not important',
   },
 };
