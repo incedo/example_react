@@ -47,9 +47,13 @@
       display: none;
     }
   }
-  
-  .menu-open {
-    display: flex;
-    flex-direction: column;
-  }
+    /* Media query for larger screens */
+    @media screen and (max-width: 768px) {
+ 
+      .menu-open {
+        display: flex;
+        flex-direction: column;
+      } 
+    }
+
   

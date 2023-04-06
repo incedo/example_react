@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { login } from '../../../store/reducers/userReducer';
 import { setProfile } from '../../../store/reducers/userReducer';
-import authService from '../../../services/authService';
 
 function Login() {
   const [username, setUsername] = useState('');

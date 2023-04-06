@@ -1,21 +1,7 @@
-// src/components/pages/Profile.js
-import React, { useState, useEffect } from 'react';
-import { getProfile } from '../../services/profileService';
+import React, { useState } from 'react';
 
 function Profile() {
   const [profile, setProfile] = useState({});
-
-  useEffect(() => {
-    async function fetchProfile() {
-      const data = await getProfile();
-      setProfile(data);
-    }
-    fetchProfile();
-  }, []);
-
-  if (!profile) {
-    return <div>Loading...</div>;
-  }
 
   return (
     <div>

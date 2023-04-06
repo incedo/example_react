@@ -1,6 +1,7 @@
 import React from 'react';
-import { Menu } from '../organisms/Menu';
-import { withReduxAndRouter } from '../../storybookProviders';
+import { withReduxAndRouter } from '../../../storybookProviders';
+
+import { Login } from './Login';
 
 const dummyProfileData = {
     auth: {
@@ -14,12 +15,10 @@ const dummyProfileData = {
   };
 
 export default {
-  title: 'Organisms/Menu',
-  component: Menu,
+  title: 'Organisms/Auth/Login',
+  component: Login,
   decorators: [(Story) => withReduxAndRouter(dummyProfileData)(Story)],
+  tags: ['autodocs'],
 };
 
-const Template = (args) => <Menu {...args} />;
-
-export const Default = Template.bind({});
-Default.args = {};
+export const Default = {};

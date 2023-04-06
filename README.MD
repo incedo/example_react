@@ -95,3 +95,9 @@ Remove the url so we can use env vars for urls
 
 export REACT_APP_API_BASE_URL=https://api.example.com
 npm run build
+
+## Storybook 
+- https://javascript.plainenglish.io/storybook-with-react-redux-and-material-ui-eeacd04bee26
+
+## Interesting statemanagement 2023 
+- https://adhithiravi.medium.com/why-you-dont-need-redux-anymore-ed75da418936
