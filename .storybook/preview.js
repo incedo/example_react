@@ -1,4 +1,7 @@
-/** @type { import('@storybook/react').Preview } */
+import { withReduxAndRouter } from '../src/storybookProviders';
+
+export const decorators = [withReduxAndRouter()];
+
 const preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },

@@ -8,5 +8,4 @@ export default {
   tags: ['autodocs'],
 };
 
-export const Primary = {
-};
+export const Primary = () => <Input />;
